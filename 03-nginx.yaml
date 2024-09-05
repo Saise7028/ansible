@@ -9,8 +9,8 @@
       name: nginx
       state: present
 
-- name: nginx run
-  ansible.builtin.service:
-   name: nginx
-   state: started
-   enable: yes        
+  - name: nginx run
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enable: yes        
