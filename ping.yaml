@@ -1,5 +1,5 @@
 -name: ping the server
- host: local
+ host: 172.31.82.162
  tasks:
  -name: ping the server
- ansible.builtin.ping:
+  ansible.builtin.ping:
