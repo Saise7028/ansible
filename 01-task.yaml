@@ -1,0 +1,8 @@
+# printing the task-01
+
+- name: printing the task-01
+  hosts: wed
+  tasks:
+  - name: printing the task-01
+    ansible.builtin.debug:
+      msg: "printing the task-01"
