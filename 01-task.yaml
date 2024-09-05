@@ -1,7 +1,7 @@
 # printing the task-01
 
 - name: printing the task-01
-  hosts: wed
+  hosts: web
   tasks:
   - name: printing the task-01
     ansible.builtin.debug:
