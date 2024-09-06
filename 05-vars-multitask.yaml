@@ -1,0 +1,22 @@
+# variables information printing
+
+- name: variables information print
+  hosts: web
+  vars:
+  COURSE: "Devops with Aws"
+  DURATION: "90Days"
+  TRAINER: "Siva kumar.M"
+  tasks:
+  - name: variables information printing
+    ansible.builtin.debug:
+      msg: "Hi iam learning {{COURSE}},{{DURATION}},{{TRAINER}}"
+
+  - name: variables information printing again
+    vars:
+    COURSE: "JAVA"
+    ansible.builtin.debug:
+      msg: "Hi iam learning {{COURSE}},{{DURATION}},{{TRAINER}}"
+
+  - name: variables information printing again and again
+    ansible.builtin.debug:
+      msg: "Hi iam learning {{COURSE}},{{DURATION}},{{TRAINER}}"        
