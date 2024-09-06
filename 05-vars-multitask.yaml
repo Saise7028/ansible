@@ -3,9 +3,9 @@
 - name: variables information print
   hosts: web
   vars:
-  COURSE: "Devops with Aws"
-  DURATION: "90Days"
-  TRAINER: "Siva kumar.M"
+   COURSE: "Devops with Aws"
+   DURATION: "90Days"
+   TRAINER: "Siva kumar.M"
   tasks:
   - name: variables information printing
     ansible.builtin.debug:
