@@ -13,7 +13,7 @@
 
   - name: variables information printing again
     vars:
-    COURSE: "JAVA"
+     COURSE: "JAVA"
     ansible.builtin.debug:
       msg: "Hi iam learning {{COURSE}},{{DURATION}},{{TRAINER}}"
 
