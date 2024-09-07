@@ -13,9 +13,9 @@
   - name: given numbeis less than are not 10
     ansible.builtin.debug:
      msg: "The given number {{my_number}} is less than 10"
-    when: Number is{{my_number}} < 10 
+    when: my_number is{{my_number}} < 10 
 
   - name: given number is greater than are equal to 10
     ansible.builtin.debug:
     msg: "The given number {{my_number}} is greater than 10"
-    when: Number is{{my_number}} > 10
+    when: my_number is{{my_number}} > 10
