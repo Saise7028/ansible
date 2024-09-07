@@ -17,9 +17,10 @@
     ci: jenkins
     cm: ansible
     cloud: aws
-    - S3
-    - IAM
-    - route53
+    aws:
+     - S3
+     - IAM
+     - route53
   tasks:
   - name: course information 
     ansible.builtin.debug:
