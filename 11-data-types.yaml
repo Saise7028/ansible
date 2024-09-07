@@ -1,0 +1,26 @@
+# print the course information
+
+- name: course information printing
+  hosts: web
+  vars:
+   COURSE: "Devops with Aws" #string
+   DURATION: "180Days" #number 
+   topics: #list
+    - linux
+    - shell scripting
+    - ansible
+    - terraform
+    - aws
+    - k8
+   live: true #boolean funtions(true/false)
+   tools: #map/dictonery
+    ci: jenkins
+    cm: ansible
+    cloud: aws
+    - S3
+    - IAM
+    - route53
+  tasks:
+  - name: course information 
+    ansible.builtin.debug:
+      msg: "Hi iam learning Course is:{{COURSE}}, Duration is:{{DURATION}}, Topics are:{{topics}}, Live is:{{live}}, Tools are:{{tools}}"    
