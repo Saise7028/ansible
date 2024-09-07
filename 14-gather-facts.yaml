@@ -4,6 +4,6 @@
   hosts: web
   become: yes
   tasks:
-  - name: print facts information
+  - name: print the facts 
     ansible.builtin.debug:
-      msg:"facts info:{{ansible_facts}}"
+      msg:"{{ansible_facts}}"
