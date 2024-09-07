@@ -2,6 +2,7 @@
 
 - name: course information printing
   hosts: local
+  connection: local #local host
   vars:
    COURSE: "Devops with Aws" #string
    DURATION: "180Days" #number 
