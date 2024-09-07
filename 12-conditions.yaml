@@ -11,3 +11,4 @@
   - name: given numbeis less than are not 10
     ansible.builtin.debug:
      msg: "The given number {{number}} is less than 10"
+    when: Number is{{number}} < 10 
