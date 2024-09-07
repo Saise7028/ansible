@@ -1,7 +1,7 @@
 # print the course information
 
 - name: course information printing
-  hosts: web
+  hosts: local
   vars:
    COURSE: "Devops with Aws" #string
    DURATION: "180Days" #number 
