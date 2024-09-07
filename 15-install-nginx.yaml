@@ -1,6 +1,6 @@
 # install nginx
 
-- name: install nsinx
+- name: install nginx
   hosts: web
   become: yes
   tasks:
