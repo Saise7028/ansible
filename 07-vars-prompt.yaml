@@ -10,7 +10,7 @@
   - name: TRAINER
     prompt: please enter the course trainer
   tasks:
-  - name: print variables from promt
+  - name: print variables from prompt
     ansible.builtin.debug:
       msg: "Hi,iam Learning Course is:{{COURSE}}, Duration is:{{DURATION}}, Trainer is:{{TRAINER}}"
       
