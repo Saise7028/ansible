@@ -1,7 +1,7 @@
 # variables from inventory file
 
 - name: variables from inventory file
-  hosts:web
+  hosts: web
   tasks:
   - name: print variables from inventory file
     ansible.builtin.debug:
