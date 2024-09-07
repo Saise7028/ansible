@@ -8,7 +8,7 @@
   #   prompt: please enter the number 
   #   private: false
   vars:
-    my_number: 10
+    my_number: 22
   tasks:
   - name: print this if less than  10
     ansible.builtin.debug:
