@@ -1,0 +1,13 @@
+# print the given number is leesthan 10 are not
+
+- name: given number is lessthan 10 are not
+  hosts: local
+  connection: local
+  vars-prompt:
+  - name: number
+    prompt: please enter the number 
+    private: false
+  tasks:
+  - name: given numbeis less than are not 10
+    ansible.builtin.debug:
+     msg: "The given number {{number}} is less than 10"
