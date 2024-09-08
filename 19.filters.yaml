@@ -20,4 +20,25 @@
      ansible.builtin.debug:
        msg: "{{ greeting | lower }}"
 
+  - name: get the unique numbers
+    vars:
+      numbers: [1,2,3,4,6,7,19,35,9,29,10]
+    ansible.builtin.debug:
+      msg: " {{ numbers | unique }}"
+
+  - name: get the min and max
+    vars:
+      numbers: [1,2,3,5,12,23,67,22,9,0,6,11,33,7,99,8,77,10]
+    ansible.builtin.debug:
+      msg: " min: {{ numbers | min }}, max: {{ numbers | max }}" 
+
+  - name: covert map to list
+    vars:
+      course:
+        name: "Devops with Aws"
+        duration: 180 Days
+        trainer: Suresh
+    ansible.builtin.debug:
+      msg: " {{ course | dict2items }}"
+
 
