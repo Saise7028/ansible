@@ -1,11 +1,11 @@
 # print names
 
-- name: print names
+- name: loops demo
   hosts: local
   connection: local
   tasks:
   - name: print names
-    ansible.biltin.debug:
+    ansible.builtin.debug:
       msg: "Hello,hi: {{ item }}"
     loop:
       - Ramesh
