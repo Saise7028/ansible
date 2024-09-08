@@ -7,8 +7,8 @@
   - name: print names
     ansible.biltin.debug:
       msg: "Hello,hi: {{ item }}"
-  loops:
-  - Ramesh
-  - Suresh
-  - Ram
-  - Raheem
+    loops:
+      - Ramesh
+      - Suresh
+      - Ram
+      - Raheem
