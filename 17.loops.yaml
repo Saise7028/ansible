@@ -1,6 +1,6 @@
 # install package
 
-- name: install packages
+- name: loops demo
   hosts: web
   become: yes
   tasks:
@@ -8,9 +8,8 @@
     ansible.builtin.package:
       msg: " {{ item }} "
       state: present
-  loops:
-  - nginx
-  - mysql
-  - postfix
-  - httpd
-        
+    loops:
+      - nginx
+      - mysql
+      - postfix
+      - httpd
