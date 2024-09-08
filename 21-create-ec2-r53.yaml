@@ -20,5 +20,5 @@
       image_id: "{{ ami_id }}"
       instance_type: "t2.micro"
       loop: "{{ instance }}"
-      register: ec2_instance
+      register: ec2_instances
 
