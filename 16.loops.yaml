@@ -1,6 +1,6 @@
 # print names
 
-- name: print Names
+- name: print names
   hosts: local
   connection: local
   tasks:
