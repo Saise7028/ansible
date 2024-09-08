@@ -7,7 +7,7 @@
     subnet_id: subnet-0d7a80893d9e26e8b
     sg_id: "sg-0936c1059d1f6e5df"
     ami_id: "ami-09c813fb71547fc4f"
-    instance: 
+    instances: 
     - mysql
     - backend
     - frontend
