@@ -11,7 +11,7 @@
   - name: convert to uppercase
     vars:
       greeting: "hello suresh"
-    ansible.duiltin.debug:
+    ansible.builtin.debug:
       msg: "{{ greeting | upper }}"
 
   -  name: covert to lowercase
