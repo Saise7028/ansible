@@ -9,7 +9,7 @@
     # ansible.builtin.command: -->command module just issue the commands only.
 
   - name: check the process
-    ansible.builtin.shell: ps -ef | grep
+    ansible.builtin.shell: ps -ef | grep ssh
     register: output
     # ansible.builtin.command: ps -ef | grep
     
