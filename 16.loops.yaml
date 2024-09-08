@@ -1,0 +1,14 @@
+# print names
+
+- name: print Names
+  hosts: local
+  connection: local
+  tasks:
+  - name: print names
+    ansible.biltin.debug:
+      msg: "Hello,hi: {{ item }}"
+  loops:
+  - Ramesh
+  - Suresh
+  - Ram
+  - Raheem
