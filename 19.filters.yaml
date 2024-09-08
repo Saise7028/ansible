@@ -48,6 +48,6 @@
       - { "key": "duration","value": "180 Days" }
       - { "key": "trainer", "value": "Suresh" }
     ansible.builtin.debug:
-      msg: " {{ corse | items2dict }}"  
+      msg: " {{ corse | items2dict }} "  
 
 
