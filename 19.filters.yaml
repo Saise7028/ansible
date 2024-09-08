@@ -48,6 +48,12 @@
       - { "key": "duration","value": "180 Days" }
       - { "key": "trainer", "value": "Suresh" }
     ansible.builtin.debug:
-      msg: " {{ course | items2dict }} "  
+      msg: " {{ course | items2dict }} "
+
+  - name: check ip address
+    vars:
+      my_ip: 34.229.11.234
+    ansible.builtin.debug:
+      msg: "{{ my_ip | ansible.utils.ipv4 }}"  
 
 
