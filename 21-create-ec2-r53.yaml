@@ -11,6 +11,7 @@
     - mysql
     - backend
     - frontend
+    zone: awsd81s.online
   tasks:
   - name: ansible install boto3 and botocore
     ansible.builtin.pip:
@@ -30,4 +31,15 @@
   - name: print the output
     ansible.builtin.debug:
       msg: "{{ ec2_instances }}"
+
+  - name: create r53 records
+    amazon.aws.route53:
+    state: present
+    zone: "{{ zone }}"
+    record: "{{ item.item }}.{{ zone }}"
+    type: A
+    ttl: 1
+    value: "{{ item.instances[0].private_ip_address }}"
+    wait: true
+  loop: "{{ ec2_instances.results }}"  
 
